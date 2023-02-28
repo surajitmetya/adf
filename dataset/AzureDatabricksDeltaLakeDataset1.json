@@ -1,0 +1,38 @@
+{
+	"name": "AzureDatabricksDeltaLakeDataset1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDatabricksDeltaLake1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureDatabricksDeltaLakeDataset",
+		"typeProperties": {
+			"database": "default",
+			"table": "country"
+		},
+		"schema": [
+			{
+				"name": "country",
+				"type": "string"
+			},
+			{
+				"name": "country_code_2_digit",
+				"type": "string"
+			},
+			{
+				"name": "country_code_3_digit",
+				"type": "string"
+			},
+			{
+				"name": "continent",
+				"type": "string"
+			},
+			{
+				"name": "population",
+				"type": "string"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
